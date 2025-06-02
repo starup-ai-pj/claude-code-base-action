@@ -8,7 +8,7 @@ import { validateEnvironmentVariables } from "./validate-env";
 
 async function run() {
   try {
-    validateEnvironmentVariables();
+    // validateEnvironmentVariables();
 
     await setupClaudeCodeSettings();
 
