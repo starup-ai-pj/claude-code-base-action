@@ -90,10 +90,6 @@ runs:
         cd ${{ github.action_path }}
         bun install
 
-    - name: Install Claude Code
-      shell: bash
-      run: npm install -g @anthropic-ai/claude-code@1.0.6
-
     - name: Run Claude Code Action
       shell: bash
       id: run_claude
