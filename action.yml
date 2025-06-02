@@ -90,6 +90,8 @@ runs:
         cd ${{ github.action_path }}
         bun install
 
+    # - name: Install Claude Code すでに入っている前提
+
     - name: Run Claude Code Action
       shell: bash
       id: run_claude
