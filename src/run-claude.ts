@@ -32,6 +32,9 @@ export function prepareRunConfig(
   if (options.allowedTools) {
     claudeArgs.push("--allowedTools", options.allowedTools);
   }
+  
+  console.log(`AllowedTools: ${options.allowedTools} !!! grep:dinnerisaramen`);
+  
   if (options.disallowedTools) {
     claudeArgs.push("--disallowedTools", options.disallowedTools);
   }
