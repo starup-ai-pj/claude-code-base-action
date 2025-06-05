@@ -96,7 +96,7 @@ export async function runClaude(promptPath: string, options: ClaudeOptions) {
     pipeStream.destroy();
   });
 
-  console.log('grep:ramen ${config.claudeArgs}`)
+  console.log(`grep:ramen ${config.claudeArgs}`)
   
   const claudeProcess = spawn("claude", config.claudeArgs, {
     stdio: ["pipe", "pipe", "inherit"],
